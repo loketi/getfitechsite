@@ -39,14 +39,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </style>
 <!--BODY BACKGROUND IMAGE CODE END -->
 
-<!-- Ometrics - place all of this script before </head> -->
-<object id="958e261612027201dfcd0f3b25eccf6a">
-<script type="text/javascript">var OMETRICS_WIDGET = "958e261612027201dfcd0f3b25eccf6a";</script>
-<script type="text/javascript">var HOST_URL = 'www.ometrics.com';</script>
-<script type="text/javascript" language="javascript" data-my="958e261612027201dfcd0f3b25eccf6a" src="https://www.ometrics.com/widget/widget-ometrics.js"></script>
-</object>
-<!-- Ometrics - place all of this script before </head> -->
-
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ff58f6515b7e22d6bbf05093e/c181cedcc10ca961ed4789b9a.js");</script>
 
   </head>
@@ -59,6 +51,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9TB3LV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "113525637506166");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 <iframe id="storePreview" src="https://getfitech-consulting.smblogin.com/public/store/NO10/default/" width="2000" height="680" frameborder="0" style="max-width:100%;display:block;margin:0 auto;">
 </iframe>
@@ -78,7 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 </style>
 </footer>
-<!--<script src="//code.tidio.co/ulbnewhwanj82ah1r8kkuwdzv8pkcoeb.js" async></script>-->
+
 </body>
 </html>
 
