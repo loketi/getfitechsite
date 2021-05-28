@@ -42,6 +42,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "113525637506166");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 
         <div class="overlay"></div>
         <section class="top-part">
@@ -83,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p>The essence of PPC advertising is obtaining value from each click, the Ad Copy, Keywords to the post-click landing page where conversion happens; so whether you're keen on social media based sponsored Ads or search engine text and display Ads.</p><br><p>Our PPC Ads solutions remove the risk of advertising budget waste thus ensuring high ROAS (Return On Ad Spend) by getting not just any eye on your content, but the right eye that belongs to someone ready to make a purchase through proper audience targeting and click fraud prevention. 
 </p>
                         <div class="primary-button">
-                          <a href="#">Discover More</a>
+                          <a href="store/storefront.html">Explore Solutions</a>
                         </div>
                       </div>
                     </div>
@@ -95,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>
               <div class="heading">
                 <h1>About Us</h1>
-                <span>Get More Info About Our Agency</span> 
+                <span>About Our Agency</span> 
               </div>
               <div class="cd-half-width second-slide">   
                 <div class="container">
@@ -119,9 +146,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="left-about-text">
                               <h4>Who we are?</h4>
                               <p>Getfitech Consulting is a PPC advertising and SEO solutions vendor. We're specialists in managed/do-it-for-you (DIFY) digital advertising solutions that include pre-roll video Ads, targeted display Ads, remarketing/retargeting Ads, streaming tv and turnkey SEO.</p> <p>Our advertising stack includes both display and search advertising options to garner unique clicks to your website or phone calls to your physical store.</p>
-                              <div class="primary-button">
+                              <!--<div class="primary-button">
                                 <a href="#">Discover More</a>
-                              </div>
+                              </div>-->
                             </div>
                           </div>
                           <div class="col-md-5 right-image">
@@ -162,8 +189,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                   <p>- Can be context-aware</p>
                                 </ul>
                               </div>
-                              <div class="primary-button">
-                                <a href="store/storefront.html">Explore Solutions</a>
+                              	<div class="primary-button">
+                                <a href="https://1l.ink/7M84TS3">Buy Now</a>&#160;&#160;
+                                <a href="mailto:info@getfitech.com?subject=Pre-roll video mailto!&body=Send me more information!" target="_blank">Learn More</a>
                               </div>
                             </div>
                           </div>
@@ -209,6 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                           </div>
                           <div class="col-md-3 project-item">
                             <a href="docs/case-study-attorney.pdf" target="_blank"><img src="img/project-item-08.jpg"></a>
+                            
                             <!--images are chiller 36-->
                           </div>
                         </div>
@@ -220,9 +249,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
 
             <li>
+
               <div class="heading">
                 <h1>Contact us</h1>
-                <span>You'll be responded within 48 hrs</span> 
+                <span>You'll be responded to within 48 hrs</span> 
               </div>
               <div class="cd-half-width fivth-slide">
                 <div class="container">
@@ -282,7 +312,7 @@ d.appendChild(f);
         <footer>
           <p>Copyright &copy; 2021 Getfitech Consulting 
                                 
-        	| Designed by <em>GCPS</em></p>
+        	| Designed by <a href="https://wrasse.tech" target="_blank"><me>Wrasse Tech</em></a></p>
         </footer>
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -291,6 +321,57 @@ d.appendChild(f);
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
+        <!--SCROLL TO PAGE TOP SCRIPT START-->
+        
+        <style>
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 2px;
+		right: 6px;
+		z-index: 99;
+		font-size: 14px;
+		border: none;
+		outline: none;
+		background-color: #17202A;
+		color: white;
+		cursor: pointer;
+		padding: 10px;
+		border-radius: 10px;
+	}
+
+	#myBtn:hover {
+		background-color: #555;
+	}
+</style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div style="background-color:white;padding:3px 3px 0px"></strong></div>
+
+<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+
+<!--SCROLL TO TOP SCRIPT END-->
 
     </body>
 </html>
