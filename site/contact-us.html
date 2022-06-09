@@ -2,14 +2,10 @@
 
 <html>
 <head>
-<title>
-   Send Us A Message
-  </title>
+<title>Send Us A Message</title>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="website" property="og:type"/>
 <meta content="Email Marketing in Nairobi, Marketing Automation in Kenya, Email Campaign Management" property="og:description"/>
-<meta content="https://lqt4h7bpay.preview-postedstuff.com/V2-XIRb-gbGC-ziMP-ovzz/send-us-a-message/" property="og:url"/>
-<meta content="https://pro-bee-beepro-thumbnails.s3.amazonaws.com/messages/792419/776205/1664889/7708538_large.jpg" property="og:image"/>
 <meta content="Send Us A Message" property="og:title"/>
 <meta content="Email Marketing in Nairobi, Marketing Automation in Kenya, Email Campaign Management" name="description"/>
 <meta charset="utf-8"/>
@@ -31,23 +27,18 @@
 		}
 
 		.bee-row-1,
-		.bee-row-2,
-		.bee-row-3 {
-			background-color: #c0545c
-		}
-
-		.bee-row-2,
-		.bee-row-2 .bee-row-content {
+		.bee-row-1 .bee-row-content {
 			background-size: auto;
 			background-repeat: no-repeat
 		}
 
 		.bee-form select,
 		.bee-row-1,
+		.bee-row-1 .bee-row-content,
 		.bee-row-2,
 		.bee-row-2 .bee-row-content,
 		.bee-row-3,
-		.bee-row-4 {
+		.bee-row-3 .bee-row-content {
 			background-repeat: no-repeat
 		}
 
@@ -76,8 +67,8 @@
 			display: flex
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 div.label:not(.inline),
-		.bee-row-2 .bee-col-1 .bee-block-2 label:not(.inline),
+		.bee-row-1 .bee-col-1 .bee-block-2 div.label:not(.inline),
+		.bee-row-1 .bee-col-1 .bee-block-2 label:not(.inline),
 		.bee-row-content .bee-col-w12 {
 			flex-basis: 100%
 		}
@@ -86,7 +77,16 @@
 			text-decoration: none
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 .bee-form-row:not(.bee-sidelabel) input:not([type=checkbox]):not([type=radio]) {
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-2 .bee-form-row:not(.bee-sidelabel) input:not([type=checkbox]):not([type=radio]),
+		.bee-row-2 .bee-col-1 .bee-block-1 {
 			width: 100%
 		}
 
@@ -155,6 +155,11 @@
 			display: inline-block
 		}
 
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
 		@media (max-width:555px) {
 			.bee-form form {
 				width: 100% !important
@@ -165,38 +170,41 @@
 			}
 		}
 
-		.bee-row-1 .bee-row-content,
-		.bee-row-3 .bee-row-content,
-		.bee-row-4 .bee-row-content {
-			background-repeat: no-repeat;
+		.bee-row-1 .bee-row-content {
+			background-color: #c0545c;
 			color: #000
 		}
 
 		.bee-row-1 .bee-col-1,
 		.bee-row-2 .bee-col-1,
-		.bee-row-3 .bee-col-1,
-		.bee-row-4 .bee-col-1 {
+		.bee-row-3 .bee-col-1 {
 			padding-bottom: 5px;
 			padding-top: 5px
 		}
 
-		.bee-row-2 .bee-row-content {
-			color: #000
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-1 {
+		.bee-row-1 .bee-col-1 .bee-block-1 {
+			padding: 15px;
 			text-align: center;
 			width: 100%
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 {
+		.bee-row-1 .bee-col-1 .bee-block-2 {
 			font-family: inherit;
 			font-size: 14px;
 			padding: 10px;
 			text-align: center
 		}
 
-		.bee-row-4 .bee-col-1 .bee-block-1 {
+		.bee-row-2 .bee-row-content {
+			background-color: #f8edee;
+			color: #000
+		}
+
+		.bee-row-3 .bee-row-content {
+			color: #000
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 {
 			color: #9d9d9d;
 			font-family: inherit;
 			font-size: 15px;
@@ -205,27 +213,27 @@
 			text-align: center
 		}
 
-		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon-image {
+		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon-image {
 			padding: 5px 6px 5px 5px
 		}
 
-		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon {
+		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon {
 			margin-left: 0;
 			margin-right: 0
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2,
-		.bee-row-2 .bee-col-1 .bee-block-2 .bee-button-container {
+		.bee-row-1 .bee-col-1 .bee-block-2,
+		.bee-row-1 .bee-col-1 .bee-block-2 .bee-button-container {
 			text-align: "center"
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 form {
+		.bee-row-1 .bee-col-1 .bee-block-2 form {
 			display: inline-block;
 			width: 100%
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 div.label,
-		.bee-row-2 .bee-col-1 .bee-block-2 label {
+		.bee-row-1 .bee-col-1 .bee-block-2 div.label,
+		.bee-row-1 .bee-col-1 .bee-block-2 label {
 			color: #fff;
 			letter-spacing: 0;
 			line-height: 200%;
@@ -233,36 +241,36 @@
 			display: block
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 ::-webkit-input-placeholder {
+		.bee-row-1 .bee-col-1 .bee-block-2 ::-webkit-input-placeholder {
 			color: #000
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 :-moz-placeholder {
+		.bee-row-1 .bee-col-1 .bee-block-2 :-moz-placeholder {
 			color: #000
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 ::-moz-placeholder {
+		.bee-row-1 .bee-col-1 .bee-block-2 ::-moz-placeholder {
 			color: #000
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 :-ms-input-placeholder {
+		.bee-row-1 .bee-col-1 .bee-block-2 :-ms-input-placeholder {
 			color: #000
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 .bee-field>label:first-child,
-		.bee-row-2 .bee-col-1 .bee-block-2 div.label {
+		.bee-row-1 .bee-col-1 .bee-block-2 .bee-field>label:first-child,
+		.bee-row-1 .bee-col-1 .bee-block-2 div.label {
 			padding: 3px
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 .bee-field.bee-inline-field input[type=checkbox] {
+		.bee-row-1 .bee-col-1 .bee-block-2 .bee-field.bee-inline-field input[type=checkbox] {
 			position: relative;
 			color: purple;
 			top: 5px
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 input:not([type=checkbox]):not([type=radio]):not([type=image]),
-		.bee-row-2 .bee-col-1 .bee-block-2 select,
-		.bee-row-2 .bee-col-1 .bee-block-2 textarea {
+		.bee-row-1 .bee-col-1 .bee-block-2 input:not([type=checkbox]):not([type=radio]):not([type=image]),
+		.bee-row-1 .bee-col-1 .bee-block-2 select,
+		.bee-row-1 .bee-col-1 .bee-block-2 textarea {
 			background-color: #f8edee;
 			border-bottom: 1px solid transparent;
 			border-left: 1px solid transparent;
@@ -274,17 +282,17 @@
 			min-height: 38px
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 input:not([type=checkbox]):not([type=radio]):focus,
-		.bee-row-2 .bee-col-1 .bee-block-2 select:focus,
-		.bee-row-2 .bee-col-1 .bee-block-2 textarea:focus {
+		.bee-row-1 .bee-col-1 .bee-block-2 input:not([type=checkbox]):not([type=radio]):focus,
+		.bee-row-1 .bee-col-1 .bee-block-2 select:focus,
+		.bee-row-1 .bee-col-1 .bee-block-2 textarea:focus {
 			outline-color: #3aaee0
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 select {
+		.bee-row-1 .bee-col-1 .bee-block-2 select {
 			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0NCAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNDc2NCA2LjcxTDE5LjUxMjEgNS43NDU3MUMxOS4zODM2IDUuNjE3MTQgMTkuMjMzNiA1LjU1Mjg2IDE5LjA2MjEgNS41NTI4NkMxOC44OTkzIDUuNTUyODYgMTguNzQ5MyA1LjYxNzE0IDE4LjYxMjEgNS43NDU3MUwxMS4wMDA3IDEzLjM1NzFMMy4zODkyNyA1Ljc0NTcxQzMuMjYwNyA1LjYxNzE0IDMuMTEwNyA1LjU1Mjg2IDIuOTM5MjcgNS41NTI4NkMyLjc3NjQyIDUuNTUyODYgMi42MzA3IDUuNjE3MTQgMi41MDIxMyA1Ljc0NTcxTDEuNTI0OTkgNi43MUMxLjM5NjQyIDYuODM4NTcgMS4zMzIxMyA2Ljk4ODU3IDEuMzMyMTMgNy4xNkMxLjMzMjEzIDcuMzIyODYgMS4zOTY0MiA3LjQ3Mjg2IDEuNTI0OTkgNy42MUwxMC41NjM2IDE2LjYzNTdDMTAuNjkyMSAxNi43NjQzIDEwLjgzNzggMTYuODI4NiAxMS4wMDA3IDE2LjgyODZDMTEuMTcyMSAxNi44Mjg2IDExLjMyMjEgMTYuNzY0MyAxMS40NTA3IDE2LjYzNTdMMjAuNDc2NCA3LjYxQzIwLjYwNSA3LjQ3Mjg2IDIwLjY2OTMgNy4zMjI4NiAyMC42NjkzIDcuMTZDMjAuNjY5MyA2Ljk4ODU3IDIwLjYwNSA2LjgzODU3IDIwLjQ3NjQgNi43MVoiIGZpbGw9IiMwMDAwMDAiLz48L3N2Zz4=")
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 button {
+		.bee-row-1 .bee-col-1 .bee-block-2 button {
 			background-color: #3aaee0;
 			border-bottom: 0 solid transparent;
 			border-left: 0 solid transparent;
@@ -305,16 +313,6 @@
 <div class="bee-row bee-row-1">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-spacer">
-<div class="spacer" style="height:15px;">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="bee-row bee-row-2">
-<div class="bee-row-content">
-<div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-heading">
 <h1 style="color:#ffffff;direction:ltr;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:23px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
 <span class="tinyMce-placeholder">
@@ -325,35 +323,35 @@
 <div class="bee-block bee-block-2 bee-form">
 <form accept-charset="UTF-8" autocomplete="on" enctype="multipart/form-data" method="post" data-netlify="true" action="/pay-per-click/redir/webquery.html">
 <div class="bee-form-row">
-<div class="bee-field bee-field-id_exraly">
-<label for="id_exraly">
+<div class="bee-field bee-field-id_oi3pv1">
+<label for="id_oi3pv1">
            First Name
           </label>
-<input id="id_exraly" name="firstname" required="" type="text"/>
+<input id="id_oi3pv1" name="firstname" required="" type="text"/>
 </div>
 </div>
 <div class="bee-form-row">
-<div class="bee-field bee-field-id_dwhm4k">
-<label for="id_dwhm4k">
+<div class="bee-field bee-field-id_bnquk5">
+<label for="id_bnquk5">
            Last Name
           </label>
-<input id="id_dwhm4k" name="lastname" required="" type="text"/>
+<input id="id_bnquk5" name="lastname" required="" type="text"/>
 </div>
 </div>
 <div class="bee-form-row">
-<div class="bee-field bee-field-id_x1f46o">
-<label for="id_x1f46o">
+<div class="bee-field bee-field-id_arhaet">
+<label for="id_arhaet">
            Email
           </label>
-<input id="id_x1f46o" name="email" required="" type="text"/>
+<input id="id_arhaet" name="email" required="" type="text"/>
 </div>
 </div>
 <div class="bee-form-row">
-<div class="bee-field bee-field-id_5ohomw">
-<label for="id_5ohomw">
+<div class="bee-field bee-field-id_gh44yk">
+<label for="id_gh44yk">
            Select Plan
           </label>
-<select id="id_5ohomw" name="select" readonly="" required="">
+<select id="id_gh44yk" name="select" readonly="" required="">
 <option value="Bronze Plan - Kshs. 20,000/=">
             Bronze Plan - Kshs. 20,000/=
            </option>
@@ -370,27 +368,27 @@
 </div>
 </div>
 <div class="bee-form-row">
-<div class="bee-field bee-field-id_svm78z">
-<label for="id_svm78z">
+<div class="bee-field bee-field-id_3mhzds">
+<label for="id_3mhzds">
            Message
           </label>
-<textarea id="id_svm78z" name="message" rows="6"></textarea>
+<textarea id="id_3mhzds" name="message" rows="6"></textarea>
 </div>
 </div>
 <div class="bee-form-row">
-<div class="bee-field bee-field-id_obiltp bee-inline-field">
-<input id="id_obiltp" name="privacy_policy" readonly="" required="" type="checkbox"/>
-<label class="inline" for="id_obiltp">
+<div class="bee-field bee-field-id_6nur22 bee-inline-field">
+<input id="id_6nur22" name="privacy_policy" readonly="" required="" type="checkbox"/>
+<label class="inline" for="id_6nur22">
            I agree to the
-           <a href="https://getfitech.com/privacy.html">
+           <a href="https://getfitech.com/privacy.html" target="_blank">
             Privacy Policy</a>
 </label>
 </div>
 </div>
 <div class="bee-form-row">
-<div class="bee-field bee-field-id_johzff">
+<div class="bee-field bee-field-id_swu7mc">
 <div class="bee-button-container">
-<button id="id_johzff" name="submit" type="submit" value="SUBMIT">
+<button id="id_swu7mc" name="submit" type="submit" value="SUBMIT">
             SUBMIT
            </button>
 </div>
@@ -401,17 +399,16 @@
 </div>
 </div>
 </div>
-<div class="bee-row bee-row-3">
+<div class="bee-row bee-row-2">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-spacer">
-<div class="spacer" style="height:15px;">
+<div class="bee-block bee-block-1 bee-image">
+<img alt="" class="bee-center bee-autowidth" src="img/email-marketing/revamped-logo-transparent-background_minified.png" style="max-width:188px;"/>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="bee-row bee-row-4">
+<div class="bee-row bee-row-3">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-icons" id="beepro-locked-footer">
@@ -422,16 +419,5 @@
 </div>
 </div>
 </div>
-<!╌GETFITECH LOGO START╌>
-<p class="aligncenter">
-    <a href="https://getfitech.com"><img src="img/email-marketing/minified-logo.jpg" alt="getfitech-logo" style="width:239px;height:87px;"/></a>
-</p>
-
-<style>
-.aligncenter {
-    text-align: center;
-}
-</style>
-<!╌GETFITECH LOGO START╌>
 </body>
 </html>
